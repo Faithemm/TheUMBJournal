@@ -3,6 +3,7 @@ layout: default
 title: Issues
 permalink: /issues/
 ---
+
 <section class="hero">
   <p class="eyebrow">THE ARCHIVE</p>
   <h1>Journal issues</h1>
