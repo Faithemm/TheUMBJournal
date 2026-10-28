@@ -1,14 +1,10 @@
 
 title: "The UMB Journal"
-description: "An independent academic journal for research, ideas, and perspectives."
-url: "https://Faithemm.github.io"
-baseurl: ""
+description: "An academic journal for research, ideas, and perspectives."
+
+url: "https://faithemm.github.io"
+baseurl: "/TheUMBJournal"
 
 markdown: kramdown
 permalink: /articles/:title/
-
 timezone: Europe/Warsaw
-
-plugins:
-  - jekyll-feed
-
