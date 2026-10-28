@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "The Hidden Architecture of the Human Mind"
