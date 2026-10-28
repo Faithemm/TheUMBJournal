@@ -42,4 +42,3 @@ researchers and careful evaluation of new evidence.
 
 1. Replace this sample with a real, verified academic citation.
 2. Include the DOI or a stable link where available.
-
