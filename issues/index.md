@@ -1,1 +1,41 @@
 
+---
+layout: default
+title: Fall 2026
+permalink: /issues/fall-2026/
+---
+
+<section class="hero">
+  <p class="eyebrow">VOLUME 1 · ISSUE 1</p>
+  <h1>Fall 2026</h1>
+  <p class="hero-copy">
+    Research, reviews, and perspectives from our inaugural issue.
+  </p>
+</section>
+
+<section class="recent">
+  <p class="eyebrow">IN THIS ISSUE</p>
+
+  {% assign issue_posts = site.posts | where: "issue", "Fall 2026" %}
+
+  {% for post in issue_posts %}
+  <article class="article-card">
+    <p class="eyebrow">{{ post.category }}</p>
+    <h2>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    <p class="article-meta">
+      {{ post.author }} · {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+    <a class="text-link" href="{{ post.url | relative_url }}">
+      Read article →
+    </a>
+  </article>
+  {% endfor %}
+
+  {% unless issue_posts.size > 0 %}
+  <p>No articles have been published in this issue yet.</p>
+  {% endunless %}
+</section>
+
