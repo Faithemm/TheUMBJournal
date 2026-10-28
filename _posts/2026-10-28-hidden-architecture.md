@@ -10,7 +10,6 @@ image: ""
 image_alt: ""
 image_caption: ""
 ---
-
 ## Introduction
 
 The study of the human mind raises questions that cross the
