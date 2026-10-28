@@ -3,7 +3,6 @@ layout: default
 title: About
 permalink: /about/
 ---
-
 <section class="hero">
   <p class="eyebrow">ABOUT THE JOURNAL</p>
   <h1>Independent ideas. Rigorous inquiry.</h1>
