@@ -1,41 +1,28 @@
 
 ---
 layout: default
-title: Fall 2026
-permalink: /issues/fall-2026/
+title: Issues
+permalink: /issues/
 ---
 
 <section class="hero">
-  <p class="eyebrow">VOLUME 1 · ISSUE 1</p>
-  <h1>Fall 2026</h1>
+  <p class="eyebrow">THE ARCHIVE</p>
+  <h1>Journal issues</h1>
   <p class="hero-copy">
-    Research, reviews, and perspectives from our inaugural issue.
+    Browse published issues, research articles, and perspectives
+    from our academic community.
   </p>
 </section>
 
 <section class="recent">
-  <p class="eyebrow">IN THIS ISSUE</p>
-
-  {% assign issue_posts = site.posts | where: "issue", "Fall 2026" %}
-
-  {% for post in issue_posts %}
   <article class="article-card">
-    <p class="eyebrow">{{ post.category }}</p>
-    <h2>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    <p class="article-meta">
-      {{ post.author }} · {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-    <p>{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
-    <a class="text-link" href="{{ post.url | relative_url }}">
-      Read article →
+    <p class="eyebrow">2026 · VOLUME 1</p>
+    <h2><a href="{{ '/issues/fall-2026/' | relative_url }}">
+      Fall 2026
+    </a></h2>
+    <p>Our inaugural issue, featuring research and perspectives.</p>
+    <a class="text-link" href="{{ '/issues/fall-2026/' | relative_url }}">
+      View issue →
     </a>
   </article>
-  {% endfor %}
-
-  {% unless issue_posts.size > 0 %}
-  <p>No articles have been published in this issue yet.</p>
-  {% endunless %}
 </section>
-
